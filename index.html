@@ -4,10 +4,34 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <h1>Etch-A-Sketch</h1>
-    <button onclick="changeGridSize()">Change Grid Size</button>
-    <div id="container"></div>
-
+    <header class="header">
+        <h1>Etch-A-Sketch</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="controls">
+                <h2>Controls</h2>
+                <label for="grid-size">Grid Size:</label>
+                <input type="range" id="grid-size" min="1" max="64">
+                <button id="clear-button">Clear</button>
+                <button id="eraser-button">Eraser</button>
+                <button id="color-toggle">Rainbow</button>
+            </div>
+            <div id="container"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          Jain_Kuriakose
+        </p>
+        <a href="https://github.com/zippyzag88" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>

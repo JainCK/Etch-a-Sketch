@@ -1,7 +1,6 @@
 const gridSizeInput = document.getElementById("grid-size");
 const container = document.getElementById("container");
 const clearButton = document.getElementById("clear-button");
-const eraserButton = document.getElementById("eraser-button");
 const colorToggle = document.getElementById("color-toggle");
 const containerWidth = 500;
 const containerHeight = 500;
@@ -43,9 +42,6 @@ clearButton.addEventListener("click", () => {
     });
 });
 
-eraserButton.addEventListener("click", () => {
-    isRainbow = false;
-});
 
 colorToggle.addEventListener("click", () => {
     isRainbow = !isRainbow;
